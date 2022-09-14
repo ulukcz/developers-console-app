@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "speciality": "BackEnd",
+    "status": "active"
+  },
+  {
+    "id": 1,
+    "speciality": "Front-End",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "speciality": "Footbaler",
+    "status": "deleted"
+  }
+]

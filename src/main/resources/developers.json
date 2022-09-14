@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "firstName": "Ulukbek",
+    "lastName": "Kiiazov",
+    "status": "active"
+  },
+  {
+    "id": 1,
+    "firstName": "Horus",
+    "lastName": "Lohov",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "firstName": "Kaka",
+    "lastName": "Brazil",
+    "status": "deleted"
+  }
+]
