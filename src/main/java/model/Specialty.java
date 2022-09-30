@@ -1,11 +1,14 @@
 package model;
 
 public class Specialty {
-    private int id;
+    private Integer id;
     private String speciality;
     private Status status;
+    public  Specialty() {
 
-    public Specialty(int id, String speciality, Status status) {
+    }
+
+    public Specialty(Integer id, String speciality, Status status) {
         this.id = id;
         this.speciality = speciality;
         this.status = status;
@@ -27,17 +30,12 @@ public class Specialty {
         this.status = status;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public void copy(Specialty newT) {
-        this.setId(newT.getId());
-        this.setSpeciality(newT.getSpeciality());
-        this.setStatus(newT.getStatus());
-    }
 }

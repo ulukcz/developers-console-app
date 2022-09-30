@@ -1,12 +1,13 @@
 package model;
 
-import java.util.List;
-
 public class Developer {
-    private int id;
+    private Integer id;
     private String firstName;
     private String lastName;
     private Status status;
+
+    public Developer() {
+    }
 
     public Developer(int id, String firstName, String lastName, Status status) {
         this.id = id;
@@ -15,11 +16,11 @@ public class Developer {
         this.status = status;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -47,13 +48,6 @@ public class Developer {
         this.status = status;
     }
 
-    public void copy(Developer fromDev) {
-        this.setId(fromDev.getId());
-        this.setFirstName(fromDev.getFirstName());
-        this.setLastName(fromDev.getLastName());
-        this.setStatus(fromDev.getStatus());
-    }
-
     @Override
     public String toString() {
         return "Developer: " +
@@ -63,4 +57,5 @@ public class Developer {
                 "| status=" + status +
                 "\n";
     }
+
 }

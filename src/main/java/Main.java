@@ -1,8 +1,8 @@
-import view.DeveloperView;
+import view.MainView;
 
-public class Main  extends DeveloperView {
+public class Main {
     public static void main(String[] args) {
-        DeveloperView developerView = new DeveloperView();
-        developerView.start();
+        MainView mainView = new MainView();
+        mainView.showMainMenu();
     }
 }

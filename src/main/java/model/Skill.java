@@ -1,16 +1,26 @@
 package model;
 
-import java.util.List;
 
 public class Skill {
-    private int id;
-    private List<String> skills;
+    private Integer id;
+    private String name;
     private Status status;
 
-    public Skill(int id, List<String> skills, Status status) {
+    public Skill() {
+    }
+
+    public Skill(Integer id, String name, Status status) {
         this.id = id;
-        this.skills = skills;
+        this.name = name;
         this.status = status;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Status getStatus() {
@@ -21,19 +31,11 @@ public class Skill {
         this.status = status;
     }
 
-    public List<String> getSkills() {
-        return skills;
-    }
-
-    public void setSkills(List<String> skills) {
-        this.skills = skills;
-    }
-
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -41,14 +43,8 @@ public class Skill {
     public String toString() {
         return "Skill: " +
                 "id=" + id +
-                "| skills='" + skills + '\'' +
+                "| name='" + name + '\'' +
                 "| status=" + status +
                 "\n";
-    }
-
-    public void copy(Skill newT) {
-        this.setId(newT.getId());
-        this.setSkills(newT.getSkills());
-        this.setStatus(newT.getStatus());
     }
 }
