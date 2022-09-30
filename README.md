@@ -7,9 +7,13 @@ App have 3 separate JSON files:
 >developers.json, skills.json, specialities.json
 
 ### Commands to use app:
-- add - Adding developer
-- edit - editing developer
-- remove - removing developer
-- list - view all active developers
-- help - commands list
-- exit - closing app
+- 0 - Exit
+- 1 - Create dev
+- 2 - Edit dev name or last name
+- 3 - Edit dev skills
+- 4 - Edit dev speciality
+- 5 - remove dev
+- 6 - remove speciality
+- 7 - remove skills
+- 8 - list developers
+- 9 - help main commands
